@@ -8,7 +8,7 @@ $(document).ready(function(){
 		memory += $('#infograph_input').val();
 		$('#infograph_input').blur();
 		$('#infograph_loading').show('fade', 500);
-		$.post('/infograph/get_keyword_recommendation/init', {'keyword': $('#infograph_input').val()}, 
+		$.post('/index.php/infograph/get_keyword_recommendation/init', {'keyword': $('#infograph_input').val()}, 
 			function(data){
 				$('#infograph_loading').hide('fade', 500);
 				var data_array = data.split('|');
@@ -43,7 +43,7 @@ $(document).ready(function(){
 	$('.infograph_children_active').hover(function(){
 	var articles = $(this).children('.infograph_children_wrapper').children('.infograph_children_articleid').text();
 	target = $(this).children('.infograph_children_wrapper').children('.infograph_children_popover');
-	$.post('/infograph/load_articles', { 'articles': articles}, 
+	$.post('/index.php/infograph/load_articles', { 'articles': articles}, 
 	function(data){
 		$('.infograph_current').addClass('infograph_current_popoverup');
 		target.html(data);
@@ -131,7 +131,7 @@ $(document).ready(function(){
 		memory += keyword;
 		setTimeout(function(){
 			$('#infograph_loading').show('fade', 500);
-			$.post('/infograph/get_keyword_recommendation/'+type, {'keyword': keyword, 'memory': memory}, 
+			$.post('/index.php/infograph/get_keyword_recommendation/'+type, {'keyword': keyword, 'memory': memory}, 
 			function(data){
 				$('.infograph_current').prepend(data);
 				$('#infograph_input').hide('fade', 500);
