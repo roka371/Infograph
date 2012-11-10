@@ -25,6 +25,8 @@ color: white;
 background-color: rgba(0, 0, 0, 0.5);
 font-size: 36px;
 font-weight: 100;
+z-index: 10000;
+cursor: pointer;
 }
 
 #infograph_node_container {
@@ -45,6 +47,7 @@ height: 100%;
 border: 1px solid #E3E7E9;
 z-index: 1;
 -webkit-transition: linear 0.2s;
+cursor: pointer;
 }
 
 #infograph_reference_container {
@@ -68,6 +71,7 @@ background-color: #C1C5C7;
 position: absolute;
 border: 1px solid #B8BCBE;
 -webkit-transition: linear 0.2s;
+cursor: pointer;
 }
 
 .infograph_children_topleft {

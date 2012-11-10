@@ -38,7 +38,7 @@ The main view for Infograph
 
 <div id="container">
 	
-	<div id="infograph_title">Infograph</div>
+	<div id="infograph_title" onclick="window.location.href='/index.php/infograph'">Infograph</div>
 
 	<div id="infograph">
 		
