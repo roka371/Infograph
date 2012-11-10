@@ -23,3 +23,7 @@ Things to accomplish:
 1. Build keyword extraction tools using AlchemyAPI that determines the topic of these articles, and integrate the algorithm with our feed fetching system so that the keyword will be determined as we fetch them using RSS.
 2. Create an algorithm that calculates the association among keywords.
 3. Create a UI that shows a graph of the association among keywords.
+
+Note:
+Please test on Chrome & Safari.
+This application

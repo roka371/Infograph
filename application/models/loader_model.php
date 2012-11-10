@@ -1,5 +1,7 @@
 <?php
 
+	// Loader_model.php contains functions that deal with fetching articles from database.
+	
 	class Loader_Model extends CI_Model{
 		public function __construct(){
 			$this->load->database();
